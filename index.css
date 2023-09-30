@@ -1,0 +1,427 @@
+/* The universal font Inter, and background gradient for body which would match the background image */
+body {
+  font-family: "Inter", sans-serif;
+  background: url(./assets/close-up-businesswoman-with-big-smile\ 1.png),
+    linear-gradient(to bottom, #0563da1c, #f3f7f400);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+
+/* The universal color which replaces black  */
+body,
+.nav-link,
+.nav-a {
+  color: #2b2b5e;
+}
+
+/* Most used font-size */
+.nav-link,
+#form select,
+#form-button,
+#footer a {
+  font-size: 16px;
+}
+
+/* Normal Font Weight */
+.nav-link,
+#footer a {
+  font-weight: 400;
+}
+
+.nav-link {
+  line-height: 19.36px;
+}
+
+/* Disabling the default icon for dropdowns in bootstrap */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Less used color mostly for showing something is active */
+.active,
+.nav-link:hover {
+  color: #0563da;
+}
+
+.active,
+.nav-link:hover,
+.my-tooltip,
+#form-header,
+#footer-call {
+  position: relative;
+}
+
+.active::before,
+.nav-link:hover::before,
+.tooltiptext,
+.tooltiptext::after,
+#footer-call img {
+  position: absolute;
+}
+
+.active::before,
+.nav-link:hover::before,
+.tooltiptext::after {
+  content: "";
+}
+
+/* The hover and active state design for the nav links for medium and large screen */
+.active::before,
+.nav-link:hover::before {
+  display: block;
+  top: 75%;
+  width: 25px;
+  left: 17%;
+  border-bottom: 2px solid #0563da;
+}
+
+#nav-section {
+  margin-top: 32px;
+}
+
+.tooltiptext,
+#footer,
+#footer a {
+  color: white;
+}
+
+/* Tooltip design above the Services link in the nav */
+.tooltiptext {
+  width: 51px;
+  height: 19px;
+  background-color: #0563da;
+  font-size: 12px;
+  padding: 0px 0px 5px 2px;
+
+  /* Position the tooltip text - see examples below! */
+  z-index: 1;
+  bottom: 92%;
+  left: 77%;
+  margin-left: -60px;
+}
+
+.tooltiptext::after,
+#cursor {
+  margin-left: -5px;
+}
+
+/* Tooltip Arrow */
+.tooltiptext::after {
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 92%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0563da transparent transparent transparent;
+}
+
+#phone-number {
+  margin-top: 7px;
+}
+
+.container {
+  width: 93.2%;
+  max-width: 93.2%;
+}
+
+/* Button's gradient and radius */
+#nav-btn-li .btn,
+#form-button {
+  background: linear-gradient(to right, #0563da, #0e97b6);
+  border-radius: 4px;
+}
+
+#nav-btn-li .btn,
+#form-button,
+#nav-btn {
+  border: none;
+}
+
+#nav-btn-li .btn {
+  width: 155px;
+  height: 44px;
+}
+
+#nav-btn-li {
+  margin: -5px 0px 0px 35px;
+}
+
+#form-header {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+/* The animated text gradient */
+.gradient-span {
+  font-weight: 800;
+  background: -webkit-linear-gradient(left, #0563da, #3817ff, #00d0ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#form-section {
+  margin: 50px 0px 0px 15px;
+}
+
+#form-section .container {
+  margin: 0;
+  max-width: 85.11%;
+  width: 85.11%;
+}
+
+#form-section img {
+  margin-left: 234px;
+}
+
+#form {
+  padding-left: 0;
+}
+
+#form select,
+.form-control,
+label {
+  margin-bottom: 20px;
+}
+
+/* form fields border design */
+#form select,
+.form-control,
+.form-check-input {
+  border-radius: 0;
+  border: 1px solid #d7d7d7;
+}
+
+.form-check-input {
+  border: 2px solid #4823f1;
+}
+
+#form select {
+  color: #000000;
+  padding-left: 12px;
+}
+
+/* Disabling the default focus effect of bootstrap on certain things */
+#form select:focus,
+.form-check-input:focus,
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+#form label {
+  color: #00000099 60%;
+}
+
+/* A bit bolder weight */
+#form-button,
+.footer-headings {
+  font-weight: 600;
+}
+
+#form-button {
+  width: 130px;
+  height: 54px;
+}
+
+#footer .row {
+  margin: 0;
+}
+
+/* Gradient for footer section */
+#footer {
+  background: linear-gradient(to right, #0563da, #1894e5);
+  margin-top: 50px;
+}
+
+#footer a,
+.nav-a {
+  text-decoration: none;
+}
+
+#footer img {
+  margin-bottom: 10px;
+}
+
+#footer .row {
+  padding: 50px 50px;
+}
+
+.footer-headings {
+  color: #1e0886;
+  margin-top: 40px;
+}
+
+#footer .col p {
+  margin-bottom: 40px;
+}
+
+.footer-detail {
+  width: 265px;
+}
+
+.d-flex .footer-detail {
+  width: 156px;
+}
+
+.font-14,
+#form label {
+  font-size: 14px;
+}
+
+#footer-call span {
+  margin-left: 30px;
+}
+
+#footer-call img {
+  top: 0;
+}
+
+#social-logos p,
+#social-logos a,
+#social-logos img,
+#cursor {
+  display: inline;
+}
+
+#social-logos img {
+  margin-left: 10px;
+}
+
+#footer-end {
+  padding: 10px;
+}
+
+/* Buttons vibration animation */
+@keyframes btn-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(3deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Button's animation setting */
+.btn:hover {
+  animation-name: btn-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* Nav setting for small screen */
+#nav-btn {
+  font-size: 25px;
+  background: #00d0ff;
+  padding: 10px 20px;
+}
+
+#nav-btn,
+#nav-btn:hover {
+  transition: 1s;
+}
+
+#nav-btn:hover {
+  background: #a8efff;
+}
+
+#submenu,
+#footer-end {
+  text-align: center;
+}
+
+#submenu div {
+  padding: 16px 0;
+  transition: 0.5s;
+}
+
+.nav-a {
+  font-size: 20px;
+}
+
+/* Submenu hover effect */
+#submenu div:hover {
+  background-color: #00d0ff;
+  transition: 0.5s;
+}
+
+/* Typing animation from css */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+/* Animated Text setting and animation setting */
+#animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+
+#nav-section {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.flex,
+#mobile-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* For the pointer in the animation */
+.typewrite>.wrap {
+  border-right: 0.08em solid #3817ff;
+}
+
+.checkbox-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for different screen size for making it responsive */
+@media screen and (max-width: 1290px) {
+  #form-pic {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #nav-section {
+    margin-top: 0;
+    background-color: white;
+  }
+
+  #nav-section img {
+    padding: 10px 20px;
+  }
+
+  .checkbox-div {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
