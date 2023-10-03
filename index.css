@@ -10,22 +10,21 @@ body {
 
 /* The universal color which replaces black  */
 body,
-.nav-link,
-.nav-a {
+.nav-link {
   color: #2b2b5e;
 }
 
 /* Most used font-size */
 .nav-link,
-#form select,
-#form-button,
-#footer a {
+select,
+form button,
+footer a {
   font-size: 16px;
 }
 
 /* Normal Font Weight */
 .nav-link,
-#footer a {
+footer a {
   font-weight: 400;
 }
 
@@ -38,116 +37,36 @@ body,
   display: none;
 }
 
-/* Less used color mostly for showing something is active */
-.active,
-.nav-link:hover {
-  color: #0563da;
-}
-
-.active,
-.nav-link:hover,
-.my-tooltip,
-#form-header,
-#footer-call {
-  position: relative;
-}
-
-.active::before,
-.nav-link:hover::before,
-.tooltiptext,
-.tooltiptext::after,
-#footer-call img {
-  position: absolute;
-}
-
-.active::before,
-.nav-link:hover::before,
-.tooltiptext::after {
-  content: "";
-}
-
-/* The hover and active state design for the nav links for medium and large screen */
-.active::before,
-.nav-link:hover::before {
-  display: block;
-  top: 75%;
-  width: 25px;
-  left: 17%;
-  border-bottom: 2px solid #0563da;
-}
-
-#nav-section {
-  margin-top: 32px;
-}
-
-.tooltiptext,
-#footer,
-#footer a {
+footer a {
   color: white;
 }
 
-/* Tooltip design above the Services link in the nav */
-.tooltiptext {
-  width: 51px;
-  height: 19px;
-  background-color: #0563da;
-  font-size: 12px;
-  padding: 0px 0px 5px 2px;
-
-  /* Position the tooltip text - see examples below! */
-  z-index: 1;
-  bottom: 92%;
-  left: 77%;
-  margin-left: -60px;
-}
-
-.tooltiptext::after,
-#cursor {
-  margin-left: -5px;
-}
-
-/* Tooltip Arrow */
-.tooltiptext::after {
-  top: 100%;
-  /* At the bottom of the tooltip */
-  left: 92%;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #0563da transparent transparent transparent;
-}
-
-#phone-number {
-  margin-top: 7px;
-}
-
-.container {
-  width: 93.2%;
-  max-width: 93.2%;
+.navbar-nav {
+  width: 834.667px;
 }
 
 /* Button's gradient and radius */
-#nav-btn-li .btn,
+#collapsibleNavbar .btn,
 #form-button {
   background: linear-gradient(to right, #0563da, #0e97b6);
   border-radius: 4px;
 }
 
-#nav-btn-li .btn,
-#form-button,
-#nav-btn {
+.btn {
   border: none;
+  color: white;
 }
 
-#nav-btn-li .btn {
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#collapsibleNavbar .btn {
   width: 155px;
   height: 44px;
 }
 
-#nav-btn-li {
-  margin: -5px 0px 0px 35px;
-}
-
-#form-header {
+#form-heading {
   font-weight: 500;
   font-size: 50px;
 }
@@ -161,32 +80,22 @@ body,
   -webkit-text-fill-color: transparent;
 }
 
-#form-section {
-  margin: 50px 0px 0px 15px;
-}
-
-#form-section .container {
-  margin: 0;
-  max-width: 85.11%;
-  width: 85.11%;
-}
-
 #form-section img {
   margin-left: 234px;
 }
 
-#form {
+/* form {
   padding-left: 0;
-}
+} */
 
-#form select,
+form select,
 .form-control,
 label {
   margin-bottom: 20px;
 }
 
 /* form fields border design */
-#form select,
+form select,
 .form-control,
 .form-check-input {
   border-radius: 0;
@@ -197,20 +106,20 @@ label {
   border: 2px solid #4823f1;
 }
 
-#form select {
+form select {
   color: #000000;
   padding-left: 12px;
 }
 
 /* Disabling the default focus effect of bootstrap on certain things */
-#form select:focus,
+form select:focus,
 .form-check-input:focus,
 .form-control:focus,
 .btn:focus {
   box-shadow: none;
 }
 
-#form label {
+form label {
   color: #00000099 60%;
 }
 
@@ -225,27 +134,13 @@ label {
   height: 54px;
 }
 
-#footer .row {
-  margin: 0;
-}
-
 /* Gradient for footer section */
-#footer {
+footer {
   background: linear-gradient(to right, #0563da, #1894e5);
-  margin-top: 50px;
 }
 
-#footer a,
-.nav-a {
+footer a {
   text-decoration: none;
-}
-
-#footer img {
-  margin-bottom: 10px;
-}
-
-#footer .row {
-  padding: 50px 50px;
 }
 
 .footer-headings {
@@ -253,7 +148,7 @@ label {
   margin-top: 40px;
 }
 
-#footer .col p {
+footer .col p {
   margin-bottom: 40px;
 }
 
@@ -266,22 +161,13 @@ label {
 }
 
 .font-14,
-#form label {
+form label {
   font-size: 14px;
-}
-
-#footer-call span {
-  margin-left: 30px;
-}
-
-#footer-call img {
-  top: 0;
 }
 
 #social-logos p,
 #social-logos a,
-#social-logos img,
-#cursor {
+#social-logos img {
   display: inline;
 }
 
@@ -289,28 +175,20 @@ label {
   margin-left: 10px;
 }
 
-#footer-end {
-  padding: 10px;
-}
-
 /* Buttons vibration animation */
 @keyframes btn-animation {
   0% {
     transform: rotate(0deg);
   }
-
   25% {
     transform: rotate(3deg);
   }
-
   50% {
     transform: rotate(0deg);
   }
-
   75% {
     transform: rotate(-3deg);
   }
-
   100% {
     transform: rotate(0deg);
   }
@@ -325,39 +203,24 @@ label {
 }
 
 /* Nav setting for small screen */
-#nav-btn {
+#toggle-btn {
   font-size: 25px;
   background: #00d0ff;
   padding: 10px 20px;
+  border-radius: 0;
 }
 
-#nav-btn,
-#nav-btn:hover {
+#toggle-btn,
+#toggle-btn:hover {
   transition: 1s;
 }
 
-#nav-btn:hover {
+#toggle-btn:hover {
   background: #a8efff;
 }
 
-#submenu,
 #footer-end {
   text-align: center;
-}
-
-#submenu div {
-  padding: 16px 0;
-  transition: 0.5s;
-}
-
-.nav-a {
-  font-size: 20px;
-}
-
-/* Submenu hover effect */
-#submenu div:hover {
-  background-color: #00d0ff;
-  transition: 0.5s;
 }
 
 /* Typing animation from css */
@@ -365,7 +228,6 @@ label {
   from {
     width: 0;
   }
-
   to {
     width: 100%;
   }
@@ -382,28 +244,65 @@ label {
   animation-fill-mode: forwards;
 }
 
-#nav-section {
-  margin-right: 0;
-  padding-right: 0;
-}
-
-.flex,
-#mobile-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* For the pointer in the animation */
-.typewrite>.wrap {
+.typewrite > .wrap {
   border-right: 0.08em solid #3817ff;
 }
 
-.checkbox-div {
-  display: flex;
-  justify-content: space-between;
+/* Media query for different screen size for making it responsive */
+@media screen and (min-width: 1063px) {
+  header .container-fluid {
+    margin: 0 50px;
+  }
 }
 
-/* Media query for different screen size for making it responsive */
+@media screen and (min-width: 992px) {
+  .my-tooltip {
+    position: relative;
+  }
+  .tooltiptext,
+  .tooltiptext::after {
+    position: absolute;
+  }
+  .tooltiptext {
+    width: 51px;
+    height: 19px;
+    background-color: #0563da;
+    font-size: 12px;
+    padding: 0px 0px 5px 2px;
+
+    /* Position the tooltip text - see examples below! */
+    z-index: 1;
+    bottom: 92%;
+    left: 77%;
+    margin-left: -60px;
+  }
+  .tooltiptext::after {
+    content: "";
+    margin-left: -5px;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 92%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0563da transparent transparent transparent;
+  }
+  .active,
+  .nav-link:hover {
+    color: #0563da;
+    position: relative;
+  }
+  .active::before,
+  .nav-link:hover::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 75%;
+    width: 25px;
+    left: 17%;
+    border-bottom: 2px solid #0563da;
+  }
+}
+
 @media screen and (max-width: 1290px) {
   #form-pic {
     display: none;
@@ -411,17 +310,36 @@ label {
 }
 
 @media screen and (max-width: 1050px) {
-  #nav-section {
-    margin-top: 0;
-    background-color: white;
-  }
-
-  #nav-section img {
-    padding: 10px 20px;
-  }
-
   .checkbox-div {
     flex-direction: column;
     justify-content: start;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    background-color: white;
+    padding: 0;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  header {
+    margin-top: 0;
+    background-color: white;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .nav-link {
+    font-size: 20px;
+    padding: 16px 0;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .nav-link:hover {
+    background-color: #00d0ff;
+    color: white;
   }
 }
