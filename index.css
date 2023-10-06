@@ -84,6 +84,18 @@ footer a {
   margin-left: 234px;
 }
 
+.col-auto {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+/* .form-select {
+  width: 540.031px;
+}
+.form-select option {
+  width: 540.031px;
+} */
+
 /* form {
   padding-left: 0;
 } */
@@ -180,15 +192,19 @@ form label {
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(3deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(-3deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -228,6 +244,7 @@ form label {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -245,7 +262,7 @@ form label {
 }
 
 /* For the pointer in the animation */
-.typewrite > .wrap {
+.typewrite>.wrap {
   border-right: 0.08em solid #3817ff;
 }
 
@@ -260,10 +277,12 @@ form label {
   .my-tooltip {
     position: relative;
   }
+
   .tooltiptext,
   .tooltiptext::after {
     position: absolute;
   }
+
   .tooltiptext {
     width: 51px;
     height: 19px;
@@ -277,20 +296,24 @@ form label {
     left: 77%;
     margin-left: -60px;
   }
+
   .tooltiptext::after {
     content: "";
     margin-left: -5px;
-    top: 100%; /* At the bottom of the tooltip */
+    top: 100%;
+    /* At the bottom of the tooltip */
     left: 92%;
     border-width: 3px;
     border-style: solid;
     border-color: #0563da transparent transparent transparent;
   }
+
   .active,
   .nav-link:hover {
     color: #0563da;
     position: relative;
   }
+
   .active::before,
   .nav-link:hover::before {
     position: absolute;
@@ -321,25 +344,49 @@ form label {
     background-color: white;
     padding: 0;
   }
+
   .container-fluid {
     padding: 0;
   }
+
   header {
     margin-top: 0;
     background-color: white;
   }
+
   .nav-item {
     text-align: center;
   }
+
   .nav-link {
     font-size: 20px;
     padding: 16px 0;
   }
+
   .navbar-nav {
     width: 100%;
   }
+
   .nav-link:hover {
     background-color: #00d0ff;
     color: white;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .form-select {
+    width: 327px;
+  }
+
+  textarea.form-control {
+    width: 327px;
+  }
+
+  .form-control {
+    width: 149.766px;
+  }
+
+  .col-auto {
+    width: auto;
   }
 }
