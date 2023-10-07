@@ -84,10 +84,10 @@ footer a {
   margin-left: 234px;
 }
 
-.col-auto {
+/* .col-auto {
   flex: 0 0 auto;
   width: 50%;
-}
+} */
 
 /* .form-select {
   width: 540.031px;
@@ -262,8 +262,12 @@ form label {
 }
 
 /* For the pointer in the animation */
-.typewrite>.wrap {
+.typewrite > .wrap {
   border-right: 0.08em solid #3817ff;
+}
+
+form {
+  width: 630px;
 }
 
 /* Media query for different screen size for making it responsive */
@@ -349,8 +353,8 @@ form label {
     padding: 0;
   }
 
-  header {
-    margin-top: 0;
+  header.mt-4 {
+    margin-top: 0 !important;
     background-color: white;
   }
 
@@ -373,20 +377,24 @@ form label {
   }
 }
 
-@media screen and (max-width: 677px) {
-  .form-select {
+@media screen and (max-width: 650px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  /* .form-select {
     width: 327px;
   }
 
   textarea.form-control {
     width: 327px;
-  }
-
-  .form-control {
-    width: 149.766px;
-  }
+  } */
 
   .col-auto {
-    width: auto;
+    width: 100%;
   }
 }
+
+/* @media screen and (max-width:678px) {} */
