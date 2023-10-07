@@ -108,7 +108,7 @@
   </header>
 
   <!-- Form -->
-  <section id="form-section" class="mt-5 ms-3">
+  <section id="form-section" class="mt-5 ms-3 me-3">
     <h1 id="form-heading" class="position-relative">
       Ready to&nbsp;
       <!-- Typing Animation (Write the words you want to appear in the array of data-type attribute)-->
@@ -117,9 +117,9 @@
         <span id="animated-text" class="wrap"></span>
       </span>
     </h1>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <div class="row m-0">
-        <div class="col-auto me-0 p-0">
+        <div class="col me-0 p-0">
           <form class="ps-0">
             <!-- The options are placeholder, replace them as you need -->
             <select class="form-select" aria-label="Default select example">
@@ -128,23 +128,21 @@
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
-            <div class="container-fluid p-0">
-              <div class="row">
-                <div class="col-auto">
-                  <div>
-                    <input type="text" class="form-control" placeholder="Your Name" />
-                  </div>
-                  <div>
-                    <input class="form-control" placeholder="Your Phone" type="tel" />
-                  </div>
+            <div class="d-sm-flex justify-content-between d-block">
+              <div class="w-100 me-3">
+                <div>
+                  <input type="text" class="form-control" placeholder="Your Name" />
                 </div>
-                <div class="col-auto">
-                  <div>
-                    <input type="email" class="form-control" placeholder="Your Email" />
-                  </div>
-                  <div>
-                    <input type="text" class="form-control" placeholder="Organization" />
-                  </div>
+                <div>
+                  <input class="form-control" placeholder="Your Phone" type="tel" />
+                </div>
+              </div>
+              <div class="w-100">
+                <div>
+                  <input type="email" class="form-control" placeholder="Your Email" />
+                </div>
+                <div>
+                  <input type="text" class="form-control" placeholder="Organization" />
                 </div>
               </div>
             </div>
